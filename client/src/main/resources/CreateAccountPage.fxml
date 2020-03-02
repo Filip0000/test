@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.CreateAccountPageController">
+   <children>
+      <VBox prefHeight="70.0" prefWidth="600.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToLogin" text="Back to log-in" />
+               </children>
+            </AnchorPane>
+         </children></VBox>
+      <VBox prefHeight="250.0" prefWidth="600.0">
+         <children>
+            <Label text="Please fill in this form to create an account:">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="21.0" prefWidth="600.0" />
+            <Label text="Your student/employee id:">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="accountId" maxWidth="400.0" prefWidth="400.0">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </TextField>
+            <VBox prefHeight="25.0" prefWidth="600.0" />
+            <Label text="Create a new password:">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="passwordF1" maxWidth="400.0" prefWidth="400.0">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </PasswordField>
+            <VBox prefHeight="21.0" prefWidth="600.0" />
+            <Label text="Re-enter your password:">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="passwordF2" maxWidth="400.0" prefWidth="400.0">
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </PasswordField>
+            <VBox prefHeight="64.0" prefWidth="600.0">
+               <children>
+                  <Label text="Choose your account type:">
+                     <VBox.margin>
+                        <Insets left="40.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="accountTypeBox" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets left="40.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="86.0" prefWidth="600.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="271.0" layoutY="14.0" mnemonicParsing="false" onAction="#createAccount" text="Submit" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

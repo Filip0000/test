@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.BuildingListViewController">
+    <children>
+        <AnchorPane prefHeight="54.0" prefWidth="603.0" style="-fx-background-color: #00A6D6; -fx-background-size: 100%;">
+            <children>
+                <Text fill="WHITE" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Buildings" wrappingWidth="228.0">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="366.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;Username&gt;" wrappingWidth="167.2060546875" />
+                <Button fx:id="history" layoutX="441.0" layoutY="10.0" mnemonicParsing="false" onAction="#goBuildinglist" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #ffffff;" text="go Back" />
+                <Button fx:id="logout" layoutX="518.0" layoutY="10.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #ffffff;" text="Logout" />
+            </children>
+        </AnchorPane>
+          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="|" />
+          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="|" />
+        <AnchorPane prefHeight="171.0" prefWidth="669.0">
+            <children>
+            <ListView fx:id="listviewer" editable="true" layoutY="36.0" prefHeight="286.0" prefWidth="494.0" />
+            <ChoiceBox layoutX="38.0" layoutY="2.0" prefHeight="25.0" prefWidth="116.0" />
+            <ChoiceBox layoutX="164.0" layoutY="2.0" prefHeight="25.0" prefWidth="116.0" />
+            <ChoiceBox layoutX="294.0" layoutY="2.0" prefHeight="25.0" prefWidth="116.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

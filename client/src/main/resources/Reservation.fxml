@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.ReservationController">
+    <children>
+        <VBox prefHeight="70.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToView" text="Back to log-in" />
+                    </children>
+                </AnchorPane>
+            </children></VBox>
+        <VBox prefHeight="86.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="submit" layoutX="273.0" layoutY="182.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="54.0" text="Submit" />
+                        <ChoiceBox fx:id="timeslotBox" layoutX="225.0" layoutY="138.0" prefWidth="150.0" />
+                        <Label layoutX="97.0" layoutY="142.0" text="Choose timeslot:" />
+                  <DatePicker fx:id="datePicker" layoutX="225.0" layoutY="57.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Label layoutX="97.0" layoutY="61.0" text="Choose datum:" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</VBox>
